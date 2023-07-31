@@ -36,9 +36,9 @@ jobs:
           pull: true
           push: true
           platforms: linux/${{ matrix.platform }}
-          cache-from: type=registry,ref=mashirozx/mastodon:${{ github.event.release.tag_name }}-${{ matrix.platform }}
+          cache-from: type=registry,ref=ricecakey/mastodon:${{ github.event.release.tag_name }}-${{ matrix.platform }}
           cache-to: type=inline
-          tags:  mashirozx/mastodon:${{ github.event.release.tag_name }}-${{ matrix.platform }}
+          tags:  ricecakey/mastodon:${{ github.event.release.tag_name }}-${{ matrix.platform }}
         if: ${{ matrix.platform == 'arm64' }}
 
       - name: ⚓ Build and push amd64 image
@@ -48,10 +48,10 @@ jobs:
           pull: true
           push: true
           platforms: linux/${{ matrix.platform }}
-          cache-from: type=registry,ref=mashirozx/mastodon:${{ github.event.release.tag_name }}-${{ matrix.platform }}
+          cache-from: type=registry,ref=ricecakey/mastodon:${{ github.event.release.tag_name }}-${{ matrix.platform }}
           cache-to: type=inline
           tags: |
-            mashirozx/mastodon:${{ github.event.release.tag_name }}-${{ matrix.platform }}
+            ricecakey/mastodon:${{ github.event.release.tag_name }}-${{ matrix.platform }}
         if: ${{ matrix.platform == 'amd64' }}
         
       - name: ⚓ Build and push universal image
@@ -61,8 +61,8 @@ jobs:
           pull: true
           push: true
           platforms: linux/amd64, linux/arm64
-          cache-from: type=registry,ref=mashirozx/mastodon:${{ github.event.release.tag_name }}
+          cache-from: type=registry,ref=ricecakey/mastodon:${{ github.event.release.tag_name }}
           cache-to: type=inline
           tags: |
-            mashirozx/mastodon:${{ github.event.release.tag_name }}
+            ricecakey/mastodon:${{ github.event.release.tag_name }}
         if: ${{ matrix.platform == 'universal' }}

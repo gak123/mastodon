@@ -37,8 +37,8 @@ jobs:
           build-args: |
             VARIANT=3.0-bullseye
             NODE_VERSION=14
-          cache-from: type=registry,ref=mashirozx/mastodon:dev
+          cache-from: type=registry,ref=ricecakey/mastodon:dev
           cache-to: type=inline
           tags: |
-            mashirozx/mastodon:dev
-            mashirozx/mastodon:dev-${{steps.vars.outputs.sha_short}}
+            ricecakey/mastodon:dev
+            ricecakey/mastodon:dev-${{steps.vars.outputs.sha_short}}

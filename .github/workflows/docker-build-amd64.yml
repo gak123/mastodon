@@ -35,7 +35,7 @@ jobs:
         uses: docker/metadata-action@v3
         id: meta
         with:
-          images: mashirozx/mastodon
+          images: ricecakey/mastodon
           flavor: |
             latest=auto
           tags: |
@@ -53,8 +53,8 @@ jobs:
           pull: true
           push: true
           platforms: linux/amd64
-          cache-from: type=registry,ref=mashirozx/mastodon:latest
+          cache-from: type=registry,ref=ricecakey/mastodon:latest
           cache-to: type=inline
           tags: |
-            mashirozx/mastodon:latest-amd64
-            mashirozx/mastodon:sha-${{steps.vars.outputs.sha_short}}-amd64
+            ricecakey/mastodon:latest-amd64
+            ricecakey/mastodon:sha-${{steps.vars.outputs.sha_short}}-amd64
