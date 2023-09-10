@@ -1,10 +1,10 @@
 <h1><picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./lib/assets/wordmark-with-sub_forest.dark.png?raw=true">
-  <source media="(prefers-color-scheme: light)" srcset="./lib/assets/wordmark-with-sub_forest.light.png?raw=true">
+  <source media="(prefers-color-scheme: dark)" srcset="./lib/assets/wordmark-with-sub_inari.dark.png?raw=true">
+  <source media="(prefers-color-scheme: light)" srcset="./lib/assets/wordmark-with-sub_inari.light.png?raw=true">
   <img alt="Mastodon" src="./lib/assets/wordmark.light.png?raw=true" height="34">
 </picture></h1>
 
-Mastodon fork for [littlefo.rest](https://littlefo.rest)
+Mastodon fork for [inari.ricecakey.top](inari.ricecakey.top)
 
 [![DockerHub](https://img.shields.io/docker/pulls/mashirozx/mastodon.svg?logo=docker&color=2496ED)](https://hub.docker.com/r/mashirozx/mastodon)
 [![Build Universal Image](https://github.com/mashirozx/mastodon/actions/workflows/docker-build.yml/badge.svg)](https://github.com/mashirozx/mastodon/actions/workflows/docker-build-main.yml)
